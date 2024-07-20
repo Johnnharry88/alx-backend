@@ -33,7 +33,7 @@ class Server:
             database = self.dataset()
             trunc_database = database[:1000]
             self.__indexed_dataset = {
-                    x: database[x] for x in range(len(database))
+                    i: database[i] for i in range(len(database))
                     }
         return self.__indexed_dataset
 
