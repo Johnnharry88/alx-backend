@@ -45,8 +45,7 @@ class Server:
 
         # checks out for the indes values
         assert isinstance(index, int)
-        assert index >= 0
-        assert len(self.indexed_dataset()) > index
+        assert 0 <= index < len(self.indexed_dataset())
         assert isinstance(page_size, int) and page_size > 0
 
         d_x = []
