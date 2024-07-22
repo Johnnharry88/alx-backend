@@ -31,7 +31,7 @@ class Server:
         """Indexing dataset by sortiing position starting at 0"""
         if self.__indexed_dataset is None:
             dataset = self.dataset()
-            trunc_database = dataset[:1000]
+            truncated_database = dataset[:1000]
             self.__indexed_dataset = {
                     i: dataset[i] for i in range(len(dataset))
                     }
