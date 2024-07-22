@@ -51,17 +51,18 @@ class Server:
         assert isinstance(page_size, int) and page_size > 0
 
         d_x = []
-        next_idx = index + page_size
+        next_index = index + page_size
 
-        for x in range(index, next_idx):
-            if self.indexed_dataset().get(x):
-                d_x.append(self.indexed_dataset()[x])
+        for v in range(index, next_index):
+            if self.indexed_dataset().get(v):
+                d_x.append(self. indexed_dataset()[v])
             else:
-                x = x + 1
-                next_idx += 1
+                v += 1
+                next_index += 1
+         
         return {
             'index': index,
             'data': d_x,
             'page_size': page_size,
-            'next_index': next_idx
+            'next_index': next_index
             }
