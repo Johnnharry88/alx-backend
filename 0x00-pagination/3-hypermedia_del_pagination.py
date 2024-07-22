@@ -30,10 +30,10 @@ class Server:
     def indexed_dataset(self) -> Dict[int, List]:
         """Indexing dataset by sortiing position starting at 0"""
         if self.__indexed_dataset is None:
-            database = self.dataset()
-            trunc_database = database[:1000]
+            dataset = self.dataset()
+            trunc_database = dataset[:1000]
             self.__indexed_dataset = {
-                    i: database[i] for i in range(len(database))
+                    i: dataset[i] for i in range(len(dataset))
                     }
         return self.__indexed_dataset
 
