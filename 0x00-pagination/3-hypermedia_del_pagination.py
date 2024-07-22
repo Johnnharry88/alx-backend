@@ -59,7 +59,7 @@ class Server:
             else:
                 v += 1
                 next_index += 1
-         
+
         return {
             'index': index,
             'data': d_x,
