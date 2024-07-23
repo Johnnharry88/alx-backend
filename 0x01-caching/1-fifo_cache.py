@@ -7,6 +7,10 @@ BaseCaching = __import__('base_caching').BaseCaching
 
 class FIFOCache(BaseCaching):
     """class that defines the puting and getting function of items from dict"""
+    def __init__(self):
+        """Class construnctor"""
+        super().__init__()
+
     def put(self, key, item):
         if key is None or item is None:
             pass
