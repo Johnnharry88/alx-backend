@@ -13,6 +13,7 @@ class LRUCache(BaseCaching):
         self.recentkyz = []
 
     def put(self, key, item):
+        """Adds item to the cache"""
         if key is not None or item is not None:
             self.cache_data[key] = item
             if key not in self.recentkyz:
