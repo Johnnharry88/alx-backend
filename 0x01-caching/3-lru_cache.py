@@ -14,6 +14,8 @@ class LRUCache(BaseCaching):
 
     def put(self, key, item):
         """Adds item to the cache"""
+        if key is None or item is None:
+            return
         if key is not None or item is not None:
             self.cache_data[key] = item
             if key not in self.recentkyz:
@@ -24,7 +26,7 @@ class LRUCache(BaseCaching):
             if len(self.recentkyz) > BaseCaching.MAX_ITEMS:
                 rm = self.recentkyz.pop(0)
                 del self.cache_data[rm]
-                print('DISCARD: {:s}'.format(rm))
+                print('DISCARD: {}'.format(rm))
 
     def get(self, key):
         """returns the value stored in self.cache_data
