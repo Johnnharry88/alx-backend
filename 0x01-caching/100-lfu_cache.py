@@ -16,8 +16,6 @@ class LFUCache(BaseCaching):
 
     def put(self, key, item):
         """Places items in cache system"""
-        if key is None or item is None:
-            return
         if len(self.cache_data) > self.MAX_ITEMS and key not in self.reorder:
             self.arranged = sorted(
                 self.reorder.items(), key=operator.itemgetter(1))
