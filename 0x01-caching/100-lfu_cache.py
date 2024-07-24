@@ -15,7 +15,7 @@ class LFUCache(BaseCaching):
     def put(self, key, item):
         """Adds items to the cache system"""
         if key is None or item is None:
-            return
+            pass
         else:
             n = len(self.cache_data)
             if n >= BaseCaching.MAX_ITEMS and key not in self.cache_data:
@@ -52,5 +52,5 @@ class LFUCache(BaseCaching):
             del self.reorder[self.reorder.index(key)]
             self.reorder.append(key)
             self.arranged[key] += 1
-            return self.cache_data[key]
+            return self.cache_data.get(key)
         return None
