@@ -16,6 +16,8 @@ class LFUCache(BaseCaching):
 
     def put(self, key, item):
         """Places items in cache system"""
+        if key is None or item is None:
+            return
         if len(self.cache_data) > self.MAX_ITEMS and key not in self.reorder:
             self.arranged = sorted(
                 self.reorder.items(), key=operator.itemgetter(1))
@@ -34,4 +36,6 @@ class LFUCache(BaseCaching):
 
     def get(self, key):
         """Gets data from the cache with key"""
+        if key is None or !key:
+            return
         return self.cache_data.get(key)
