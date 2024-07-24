@@ -24,7 +24,7 @@ class LRUCache(BaseCaching):
             if len(self.recentkyz) > BaseCaching.MAX_ITEMS:
                 rm = self.recentkyz.pop(0)
                 del self.cache_data[rm]
-                print('DISCARD: {}'.format(rm))
+                print('DISCARD: {:s}'.format(rm))
 
     def get(self, key):
         """returns the value stored in self.cache_data
