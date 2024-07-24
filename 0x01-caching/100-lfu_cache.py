@@ -5,7 +5,7 @@ from base_caching import BaseCaching
 
 
 class LFUCache(BaseCaching):
-    """Class LFU"""
+    """Class LFU that holds least frequently used algo"""
     def __init__(self):
         """Constructor"""
         super().__init__()
