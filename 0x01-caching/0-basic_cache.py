@@ -7,10 +7,6 @@ BaseCaching = __import__('base_caching').BaseCaching
 
 class BasicCache(BaseCaching):
     """class that defines the puting and getting function of items from dict"""
-    def __init__(self):
-        """Iitial Constructor"""
-        super.__init__()
-
     def put(self, key, item):
         """Functions that adds itms to the cache"""
         if key is None or item is None:
