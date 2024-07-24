@@ -13,6 +13,9 @@ class MRUCache(BaseCaching):
         self.recentkyz = []
 
     def put(self, key, item):
+        """Adds items to the cache"""
+        if key is None or item is None:
+            return
         if key is not None or item is not None:
             self.cache_data[key] = item
             if key not in self.recentkyz:
