@@ -36,6 +36,6 @@ class LFUCache(BaseCaching):
 
     def get(self, key):
         """Gets data from the cache with key"""
-        if key is None or !key:
+        if key is None:
             return
         return self.cache_data.get(key)
