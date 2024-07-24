@@ -12,6 +12,7 @@ class FIFOCache(BaseCaching):
         super().__init__()
 
     def put(self, key, item):
+        """Adds items th the cache"""
         if key is None or item is None:
             pass
         else:
