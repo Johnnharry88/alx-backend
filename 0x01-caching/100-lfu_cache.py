@@ -51,5 +51,6 @@ class LFUCache(BaseCaching):
         if key is not None and key in self.cache_data:
             del self.reorder[self.reorder.index(key)]
             self.reorder.append(key)
-            return self.cache_data.get(key)
+            self.arranged[key] += 1
+            return self.cache_data[key]
         return None
