@@ -30,6 +30,7 @@ class LRUCache(BaseCaching):
         """returns the value stored in self.cache_data
         associated with key"""
         if key is not None and key in self.cache_data.keys():
-            self.recentkyz.append(self.recentkyz.pop(self.recentkyz.index(key)))
+            self.recentkyz.append(self.recentkyz.pop(
+                self.recentkyz.index(key)))
             return self.cache_data.get(key)
         return None
