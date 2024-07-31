@@ -20,10 +20,14 @@ app.config.from_object(Config)
 def get_locale() -> str:
     """Retrieves locale and returns best_mathc languae
     """
-    if request.args.get('locale'):
-        locale = request.args.get('locale')
-        if locale in app.config['LANGUAGES']:
-            return locale
+    queries = request.query_string.decode('utf-8').split('&')
+    query_ = dict(map(
+        lambda x: (x if '=' in x else '{}='.format(x)).split('='),
+        queries,
+    ))
+    if 'locale' in query_:
+        if query_table['locale'] in app.config["LANGUAGES"]:
+            return query_table['locale']
     return request.accept_languages.best_match(app.config["LANGUAGES"])
 
 
