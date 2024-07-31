@@ -12,9 +12,9 @@ class Config:
 
 
 app = Flask(__name__)
-app.config.from_object(Config)
 babel = Babel(app)
 
+app.config.from_object(Config)
 
 @babel.localeselector
 def get_locale() -> str:
