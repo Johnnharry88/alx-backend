@@ -22,7 +22,7 @@ msgid "home_title"
 msgstr "Bienvenue chez Holberton"
 
 msgid "home_header"
-msgstr "Bonjur monde!"
+msgstr "Bonjour monde!"
 
 msgid "logged_in_as"
 msgstr "Vous êtes connecté en tant que %(username)s."
