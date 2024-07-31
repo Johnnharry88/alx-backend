@@ -17,3 +17,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
+# template 3-8 index html jinja 
+msgid "hone_title"
+msgstr ""
+
+#Template 3-8 index html
+msgid "home_header"
+msgstr ""
+
+# template 5-index html"
+msgid "logged_in_as"
+msgstr ""
+
+# template 5-index.html
+msgid "not_logged-in"
+msgstr ""
