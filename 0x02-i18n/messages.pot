@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-07-30 22:14-0700\n"
+"POT-Creation-Date: 2024-07-31 03:50-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,4 +21,13 @@ msgid "home_title"
 msgstr ""
 
 msgid "home_header"
+msgstr ""
+
+msgid "logged_in_as"
+msgstr ""
+
+msgid "not_logged_in"
+msgstr ""
+
+msgid "current_time_is"
 msgstr ""

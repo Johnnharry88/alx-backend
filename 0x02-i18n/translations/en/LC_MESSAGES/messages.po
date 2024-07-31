@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-07-30 22:14-0700\n"
-"PO-Revision-Date: 2024-07-30 22:18-0700\n"
+"POT-Creation-Date: 2024-07-31 03:50-0700\n"
+"PO-Revision-Date: 2024-07-31 03:57-0700\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
 "Language-Team: en <LL@li.org>\n"
@@ -23,4 +23,13 @@ msgstr "Welcome to Holberton"
 
 msgid "home_header"
 msgstr "Hello world!"
+
+msgid "logged_in_as"
+msgstr "You are logged in as %(username)s."
+
+msgid "not_logged_in"
+msgstr "You are not logged in."
+
+msgid "current_time_is"
+msgstr "The current time is %(current_time)s."
 

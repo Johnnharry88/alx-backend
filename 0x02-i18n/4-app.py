@@ -28,8 +28,8 @@ def get_locale() -> str:
         queries,
     ))
     if 'locale' in query_:
-        if query_table['locale'] in app.config["LANGUAGES"]:
-            return query_table['locale']
+        if query_['locale'] in app.config["LANGUAGES"]:
+            return query_['locale']
     return request.accept_languages.best_match(app.config["LANGUAGES"])
 
 
