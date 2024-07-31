@@ -11,10 +11,12 @@ class Config:
     BABEL_DEFAULT_TIMEZONE = 'UTC'
 
 
+# app configuration for flask app
 app = Flask(__name__)
 babel = Babel(app)
 app.url_map.strict_slashes = False
 app.config.from_object(Config)
+
 
 @babel.localeselector
 def get_locale() -> str:
