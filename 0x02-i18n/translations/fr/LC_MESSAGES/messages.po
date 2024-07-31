@@ -18,9 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
+# template for 3-index and 4-index
 msgid "home_title"
 msgstr "Bienvenue chez Holberton"
 
+# template for 3-index and 4-index
 msgid "home_header"
 msgstr "Bonjour monde!"
 
