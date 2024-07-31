@@ -18,15 +18,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
+# jinja message template for 3-8-intdex.html
 msgid "home_title"
 msgstr "Welcome to Holberton"
 
+#jinja message template for 4-7-index html
 msgid "home_header"
 msgstr "Hello world!"
 
+#jinjat template/5-index.html
 msgid "logged_in_as"
 msgstr "You are logged in as %(username)s."
 
+# jinjat template5-index.html
 msgid "not_logged_in"
 msgstr "You are not logged in."
 
