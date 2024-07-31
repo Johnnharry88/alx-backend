@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ Flask app that handles user"""
 from flask import Flask, render_template, request, g
-from flask_babel import Babel
+from flask_babel import Babel, format_datetime
 import pytz
 
 
@@ -60,8 +60,8 @@ def get_locale():
 @babel.timezoneselector
 def get_timezone() -> str:
     """Retrieves timezone for web pages"""
-    timezone = request.args.get('timezone').strip()
-    if g.user and not timezone:
+    timezone = request.args.get('timezone', '').strip()
+    if not timezone and g.user:
         timezone = g.user['timezone']
     try:
         return pytz.timezone(timezone).zone
@@ -71,7 +71,8 @@ def get_timezone() -> str:
 @app.route('/')
 def index() -> str:
     """Returns the index page requested"""
-    return render_template('7-index.html')
+    g.time = format_datetime()
+    return render_template('index.html')
 
 
 if __name__ == "__main__":
